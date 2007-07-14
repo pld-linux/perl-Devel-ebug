@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests		# do not perform "make test"
+%bcond_with	tests		# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Devel
@@ -9,7 +9,7 @@ Summary:	Devel::ebug - A simple, extensible Perl debugger
 #Summary(pl.UTF-8):	
 Name:		perl-Devel-ebug
 Version:	0.48
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
