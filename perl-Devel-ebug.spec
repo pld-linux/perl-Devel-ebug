@@ -6,7 +6,7 @@
 %define	pdir	Devel
 %define	pnam	ebug
 Summary:	Devel::ebug - A simple, extensible Perl debugger
-#Summary(pl.UTF-8):	
+Summary(pl.UTF-8):	Devel::ebug - prosty, rozszerzalny debugger dla Perla
 Name:		perl-Devel-ebug
 Version:	0.48
 Release:	2
@@ -16,6 +16,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Devel/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	131348a2b3d9cd9a5ceabf65741fd618
 URL:		http://search.cpan.org/dist/Devel-ebug/
+BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -33,8 +34,12 @@ clean API. Using this module, you may easily write a Perl debugger to
 debug your programs. Alternatively, it comes with an interactive
 debugger, ebug.
 
-# %description -l pl.UTF-8
-# TODO
+%description -l pl.UTF-8
+Debugger to program służący do śledzenia innych programów. Devel::ebug
+to prosty, rozszerzalny debugger dla Perla z czystym API. Przy użyciu
+tego modułu można łatwo napisać debugger perlowy do śledzenia własnych
+programów. Ewentualnie użyć interaktywnego debuggera ebug
+dostarczonego z pakietem.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
