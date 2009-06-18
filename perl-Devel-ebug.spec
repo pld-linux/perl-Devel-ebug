@@ -8,13 +8,13 @@
 Summary:	Devel::ebug - A simple, extensible Perl debugger
 Summary(pl.UTF-8):	Devel::ebug - prosty, rozszerzalny debugger dla Perla
 Name:		perl-Devel-ebug
-Version:	0.48
-Release:	2
+Version:	0.49
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Devel/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	131348a2b3d9cd9a5ceabf65741fd618
+# Source0-md5:	dc63f74ebbbe677353b2457ac30377e6
 URL:		http://search.cpan.org/dist/Devel-ebug/
 BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
