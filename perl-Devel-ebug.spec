@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests	# perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	Devel
 %define	pnam	ebug
 Summary:	Devel::ebug - A simple, extensible Perl debugger
